@@ -1,0 +1,47 @@
+{
+  "name": "workloom",
+  "version": "1.0.0",
+  "description": "a project management application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "cross-env NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --runInBand --detectOpenHandles"
+  },
+  "keywords": [
+    "backend",
+    "RESTful",
+    "API"
+  ],
+  "author": "krishna",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "jest": "^30.4.2",
+    "mongodb-memory-server": "^11.2.0",
+    "nodemon": "^3.1.11",
+    "prettier": "3.8.1",
+    "supertest": "^7.2.2"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^1.41.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.6.2",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mailgen": "^2.0.32",
+    "mongoose": "^9.1.6",
+    "morgan": "^1.11.0",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemailer": "^8.0.5",
+    "swagger-ui-express": "^5.0.1",
+    "xss-clean": "^0.1.4"
+  }
+}
