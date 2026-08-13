@@ -28,6 +28,8 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 // to make public folder publicly viewable such that i can serve content from it directly
 app.use(express.static("public"));
 
+app.set("trust proxy", 1); // Render ke proxy ke liye zaroori
+
 // CORS CONFIGURATION
 app.use(
     cors({
